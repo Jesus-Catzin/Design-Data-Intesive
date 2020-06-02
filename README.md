@@ -40,4 +40,10 @@
 9- Why we must not use the *average* as a service reported and what wee should use instead?
 * We mustn't use it because it doesn't tell us how many users actually experimenced that delay.
 * Usually, it's better use percentiles, in this case the median because is the half-way point. 
-10-
+
+10- Which are the three of the important design principles for software systems?
+* Operability: Make it easy for operations teams to keep the system running smoothly.
+* Simplicity: Make it easy for new engineers to understand the system, by removing as much
+complexity as possible from the system.
+* Evolvability: Make it easy for engineers in future to make changes to the system, adapting it
+for unanticipated use cases as requirements change.
