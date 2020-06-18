@@ -80,7 +80,7 @@ for unanticipated use cases as requirements change.
 8- What is the problem of no having schema?
 * Means that arbitrary keys and values can be added to a document, and when reading clients have no guarentees as to what fields the documents may contain. 
 
-9- Which is one disavantages in uses interactive language over declarative when we are talking about stiles or colors? 
+9- Which is one disavantages in uses interactive language over declarative? 
 * It's harder to understand and if the class is removed the change won't do anything even if you re-run the code.
 
 10- What is map reduce in general terms?
@@ -103,3 +103,10 @@ for unanticipated use cases as requirements change.
 * Any vertex can have an edge connecting it with any other vertex.
 * Given any vertex, you can efficiently find both its incoming and its outgoing edges, and thus traverse the graph — follow a path through a chain of vertices —both forwards and backwards.
 * By using different labels for different kinds of relationship, you can store several different kinds of information in a single graph, while still maintaining a clean data model.
+
+14- What is Cypher Query Language?
+* It is a declarative query language for property graphs, created for the Neo4j graph database
+
+15- How is written RDF objects?
+* IN XML format
+
