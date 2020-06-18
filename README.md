@@ -80,4 +80,26 @@ for unanticipated use cases as requirements change.
 8- What is the problem of no having schema?
 * Means that arbitrary keys and values can be added to a document, and when reading clients have no guarentees as to what fields the documents may contain. 
 
-9- 
+9- Which is one disavantages in uses interactive language over declarative when we are talking about stiles or colors? 
+* It's harder to understand and if the class is removed the change won't do anything even if you re-run the code.
+
+10- What is map reduce in general terms?
+* Is a programming model for processing large amounts of data in bulk across many machines. 
+
+11- Wich are the propierties of a vertex?
+* a unique identifier,
+* a set of outgoing edges,
+* a set of incoming edges, and
+* a collection of properties (key-value pairs).
+
+12- Which are the propierties of edges?
+* a unique identifier,
+* the vertex at which the edge starts (the tail vertex),
+* the vertex at which the edge ends (the head vertex),
+* a label to describe the kind of relationship between the two vertices, and
+* a collection of properties (key-value pairs).
+
+13- Which are some of the most important aspect of graph-like database model?
+* Any vertex can have an edge connecting it with any other vertex.
+* Given any vertex, you can efficiently find both its incoming and its outgoing edges, and thus traverse the graph — follow a path through a chain of vertices —both forwards and backwards.
+* By using different labels for different kinds of relationship, you can store several different kinds of information in a single graph, while still maintaining a clean data model.
