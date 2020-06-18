@@ -47,3 +47,26 @@
 complexity as possible from the system.
 * Evolvability: Make it easy for engineers in future to make changes to the system, adapting it
 for unanticipated use cases as requirements change.
+
+## Chapter Two:
+
+1- Which are the root of relational databases and which where the most case uses?
+* It lies in business data processing  and it's typically used for transaction processing (entering sale or bank transactions etc) and batch processing (customer invoicing, payroll, reporting)
+
+2- What was the goal of relational model?
+* It was to hide that implementation detail bethind a cleaner interface. 
+
+3- Which were some of the most stronger reasons behind the adoption of NoSQL databases?
+* Need for greater scalability 
+* Widespread preference of free and open source software over commercial database products. 
+* Specialized query
+* Deside for more dynamic and expressive data model. 
+
+4- What is Polyglot Persistence?
+* Refers to using different data storage technologies to handle varying data storage needs. It’s an offshoot of polyglot programming, which means using different programming languages to build an application.
+
+5- Which are some of the advantages from having standardized lists of grographic regions and industries?
+* Consistent style and spelling.
+* Avoiding ambiguity
+* Name is stored in one only place
+* Better search. 
