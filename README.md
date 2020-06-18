@@ -70,3 +70,14 @@ for unanticipated use cases as requirements change.
 * Avoiding ambiguity
 * Name is stored in one only place
 * Better search. 
+
+6- When is recommended to use the IMS (Hierarchical Model)?
+* It works well for one-to-many relationship but not for many-to-many no :c 
+
+7- How are the links in the network model?
+* Those are more like pointers in a programming language. 
+
+8- What is the problem of no having schema?
+* Means that arbitrary keys and values can be added to a document, and when reading clients have no guarentees as to what fields the documents may contain. 
+
+9- 
