@@ -156,4 +156,7 @@ must be written before it can be applied to the pages of the tree itself.
 
 13- Mention some of the most diferences between B-trees and LMS-trees:
 * B-Trees:
-  * 
+  * Are  faster for reads 
+* LMS-trees:
+  * Sustain much higher throughput of random writes
+  * Are typically faster for writes
