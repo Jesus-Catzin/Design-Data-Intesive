@@ -160,3 +160,28 @@ must be written before it can be applied to the pages of the tree itself.
 * LMS-trees:
   * Sustain much higher throughput of random writes
   * Are typically faster for writes
+
+14- Why is common used the Heap File?
+* Because because it avoids duplicating data when multiple secondary indexes are present: each index just references a location in the heap file, and the actual data is kept in one place.
+
+15- What is clusted index?
+
+16- Whad does do a *concatened index*?
+* Simply combines several field into one key by appending one column to another.
+
+17- What is the best advantages of Fuzzy Index?
+This allow search Similar keys.
+
+18- What is a Data Warehouse?
+*  is a separate database that analysts can query to their heart’s content, without affecting OLTP operations.
+
+19- How does save the data the *column-oriented storage*?
+* It doesn't store all the values from one row together, but store all the values from each column together instead. 
+
+20- Why is too important the use of RLE to sort in column storage? 
+* Because the RLE can compress many characters repeat in the key to some few kilobytes.
+
+21- Whart is *Materialized View*? 
+* It's similar to a standar (virtual) view.
+
+22- 
