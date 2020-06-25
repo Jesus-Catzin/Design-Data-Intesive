@@ -110,3 +110,31 @@ for unanticipated use cases as requirements change.
 15- How is written RDF objects?
 * IN XML format
 
+## Chapter 3:
+
+1- Which are the most two fundamentals things a database needs to do?
+* It should store and give you data when you need it!
+
+2- Why is too important choose addecaute indexs?
+* Becuase it speeds up read queries.
+
+3- What is a Hast Map?
+
+4- When is well situed use engines like Bitcask?
+*  When we have situations where for each key is updated frequently.
+
+5- What does mean Compaction? 
+* Means throwing away duplicate keys in the log, and kep only the most recent update for each key. 
+
+6- Which are some of the issues in real implementations using the log?
+* File Format: CSV not the best format for log. It faster and simplier to use a binary format.
+* Deleting Records: If you want to delete a keys and its values, you have to append a special deletion (Tombstone)
+* Chash Recovery: If the database is restarted, the in-memory has maps are lost.
+* Partially writting records: Use of checksums which allow ignore and detect corrupted parts of the log.
+* Concurrency control: Use one writer thread but with some consecuences.
+
+7- Which are some limitation of the Hash Table: 
+* Must fit in memory (Small numbers of keys)
+* Ranges queries are not efficient.
+
+8- 
