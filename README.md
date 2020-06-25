@@ -135,6 +135,25 @@ for unanticipated use cases as requirements change.
 
 7- Which are some limitation of the Hash Table: 
 * Must fit in memory (Small numbers of keys)
-* Ranges queries are not efficient.
+* Ranges queries are not efficient, the fetch is not easy to match. 
 
-8- 
+8- What is the main differences of the SStables?
+* The keys are sorted by using the Merge Sort Algorithm.1
+
+9- In TBR what is called "Memtable"?
+* To add a write into an in-memory balanced tree. 
+
+10- What is a Bloom Filter and its is benefy?
+* It's a a memory-efficient data structure for approximating the contents of a set. It can tell you if a key does not appear in the database, and thus saves many unnecessary disk reads for non-existent keys.
+
+11- Which are some advantages of update and add a new key in a B-Tree?
+* Update: You search for the leaf page containing that key and change the value that page, and write the page back to disk.
+* New Key: Find the page whose range encopasses the new key, and it to that page.
+
+12- We know that the B-tree overwrite the page on disk even including the parent and childs. What is used to avoid crashes? 
+* It used write-ahead log (WAL or Redo Log). This is an append-only file to which every B-tree modification
+must be written before it can be applied to the pages of the tree itself. 
+
+13- Mention some of the most diferences between B-trees and LMS-trees:
+* B-Trees:
+  * 
