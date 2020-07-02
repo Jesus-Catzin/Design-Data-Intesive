@@ -119,6 +119,7 @@ for unanticipated use cases as requirements change.
 * Becuase it speeds up read queries.
 
 3- What is a Hast Map?
+* Basically, a HashMap allows you to store items with identifiers. They are stored in a table format with the identifier being hashed using a hashing algorithm. 
 
 4- When is well situed use engines like Bitcask?
 *  When we have situations where for each key is updated frequently.
@@ -165,6 +166,8 @@ must be written before it can be applied to the pages of the tree itself.
 * Because because it avoids duplicating data when multiple secondary indexes are present: each index just references a location in the heap file, and the actual data is kept in one place.
 
 15- What is clusted index?
+* Cluster index is a type of index which sorts the data rows in the table on their key values. In the Database, there is only one clustered index per table.
+A clustered index defines the order in which data is stored in the table which can be sorted in only one way. So, there can be an only a single clustered index for every table. In an RDBMS, usually, the primary key allows you to create a clustered index based on that specific column. 
 
 16- Whad does do a *concatened index*?
 * Simply combines several field into one key by appending one column to another.
@@ -184,4 +187,18 @@ This allow search Similar keys.
 21- Whart is *Materialized View*? 
 * It's similar to a standar (virtual) view.
 
-22- 
+## Chapter 4:
+
+1- 
+
+2-
+3-
+4-
+5-
+6-
+7-
+8-
+9-
+10-
+11-
+12-
