@@ -189,16 +189,38 @@ This allow search Similar keys.
 
 ## Chapter 4:
 
-1- 
+1- What is *Rolling Upgrade*
+* We used the term “Rolling Upgrade” to describe a situation where we have multiple servers (usually load-balanced) and we needed to keep “the application” online, while deploying a new version of software.
 
-2-
-3-
-4-
-5-
-6-
-7-
-8-
-9-
-10-
-11-
-12-
+2- Which are the two things that we need to keep running smoothly the system?
+* Backward compatibility: Newer code can read data that was written by older code.
+* Forward compatibility: Older code can read data that was written by newer code.
+
+3-Which are some of the most subtle problems to use JSON, XML and CSV?
+* XML and CSV: Cannot distinguish between a number and a string. 
+* JSON: cannot distinguish between intenger and floating-point. 
+* Java and JSON: After 2¹³ cannot be exaclty represented in IEE 754 double precision flotaing-point number. 
+* JSON and XML: Don't support binary strings (sequences of bytes without a character encoding).
+
+4- What are *BinaryProtocol* and *CompactProtocol*?
+* BinaryProtocol: is the protocol implemented by the Network plugin and some external implementations to exchange data collected by collectd or to send data to an instance of collectd. 
+* CompactProtocol: It implements the standard Thrift TCompactProcotol which is similar to the TBinaryProtocol, but takes less space on the wire. Integral types are encoded using as varints.
+
+5- What is *writer's schema*?
+* It's when an application wants to encode some data (To write it to a file or database)
+
+6- What is *Reader's Schema?*
+* It's when an application wants to decode some data (To read it from a file or database)
+
+7- How does work the *accessing a data base at the same time*? 
+* The writing process: This may be written a *newer* versions of the code which is being update in the moment of the code running and some will be runing older code
+* The reading process: This is like a batch which reads the older version of the codad that is still running. 
+
+8- Wich are some of the most important differences between a local function and Network?
+* Local is predictable, and ehiter succes or fails depenf only on parameters that are under your control whereas network you will don't, it can be caused by lost due a nerwork problem, or the remote machine maybe slor or unaviable etc.
+* Local function call either returns a result, or throws an exception, or neceer return meanwhile network can return no result(*timeout*). 
+* Local it normally takes about the same time to execute, meanwhile a network can be slower (latency)
+* The client and service may be implemented in different programming languages.
+9- Why are so important the **actors** in *distributed actor frameworks*?
+* It's because the actos already assumes that messages may be lost, even within a single process. 
+
