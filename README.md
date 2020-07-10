@@ -224,3 +224,27 @@ This allow search Similar keys.
 9- Why are so important the **actors** in *distributed actor frameworks*?
 * It's because the actos already assumes that messages may be lost, even within a single process. 
 
+## Chapter 5.
+
+1- Tells some reasons why you might want to replicate data:
+* To keep data geographically close to your users and reduce latency.
+* To allow the system to continue working even if some parts of the system have failed (Aviability).
+* To scale out the number of machine that can serve red queries (Increase read throughput)
+
+2- Which are the main components *leader-based-replication* for?
+* Leader/master/primary
+* Replicas known as follower/read replicas/ slaves or hot standbys.
+
+3- WHich are the advantages/disadvantages of synchronous replication?
+* It guarantes to have an *up-to-date* copy of the data but if one follower doesn't respond the write cannot be processed. 
+
+4- When a *master or leader* fais a **follower** need to be promoted to be the new leader and the clients need to be reconfigurated. This is known as **Failover**.<br> How do we automatize the process?
+* 
+
+
+
+
+
+
+
+
