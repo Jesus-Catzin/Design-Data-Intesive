@@ -257,6 +257,10 @@ This allow search Similar keys.
 * Somehow merge the values together.
 * Record the conflict in an explicit data structure that preserves all information, and write application code which resolves the conflict at some later time (perhaps by prompting the user).
 
-8- 
+8- Which are the two main mechanisms that which are used in Dynamo-style? 
+* Read Repair
+* Anti-entropy process
+
+9- 
 
 
