@@ -261,6 +261,8 @@ This allow search Similar keys.
 * Read Repair
 * Anti-entropy process
 
-9- 
+9- What is *Hinted handoff*?
+* It's the fact that other node that was accepting any writes send it to the appropiate "home".
+
 
 
