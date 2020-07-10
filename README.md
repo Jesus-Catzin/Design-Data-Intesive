@@ -239,12 +239,24 @@ This allow search Similar keys.
 * It guarantes to have an *up-to-date* copy of the data but if one follower doesn't respond the write cannot be processed. 
 
 4- When a *master or leader* fais a **follower** need to be promoted to be the new leader and the clients need to be reconfigurated. This is known as **Failover**.<br> How do we automatize the process?
-* 
+* Determining that the leader has failed: Detect the fail in general.
+* Choosing a new leader: Use a election process or appoint by a previously-elected controller node.
+* Reconfiguring the system to use the new leader: Clients now need to send thier write request to the new leader.
 
+5- What does guarantee *read-your-writes-consistency*?
+* It guarantee that if the user reload the page, they will always seen any updates they submmited themselves but not promises about the other users. 
 
+6- Why is better to used *Multi-leader* configurations than *single-leader*?
+* Performance: Every write can be processed in the local datacenter and is replicated asynchronously to other datacenters.
+* Tolerance of datacenter outages: It allows each datacenter can continue operating idenpendently of the others. 
+* Tolerance of networks problems: It uses asynchronous replication can usually tolerate newtwork problems.
 
+7- When we are working with Multiple-leader, which are the way to achieve *Convergent* in order to have synchronic?
+* Give unique ID, pik the write with the highest ID as winner, and throw away the others. Tis is known as LWW.
+* Give each replica a unique ID, and let writes that originated at a higher-numbered replica always take precedence over writes that originated at a lower-numbered replica. This also implies data loss.
+* Somehow merge the values together.
+* Record the conflict in an explicit data structure that preserves all information, and write application code which resolves the conflict at some later time (perhaps by prompting the user).
 
-
-
+8- 
 
 
