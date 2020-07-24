@@ -264,5 +264,29 @@ This allow search Similar keys.
 9- What is *Hinted handoff*?
 * It's the fact that other node that was accepting any writes send it to the appropiate "home".
 
+## Chapter 6
+1- How is called partitions in MongoDB, Elasticsearch, HBase, BigTable, Cassandra, vBucket?
+* MongoDB, Elasticsearch, : Shard
+* Hbase: Region
+* BigTable: Tablet
+* Cassandra, Riak: Vnode
+* Couchbase: vBucket
 
+2- Which is the main reason to use partition?
+* To allow scalability
+
+3- What is *skewed* and *hot spot*?
+* To have some partitions that have more data or queries than others. 
+* To have partitions with disproportionately high load
+
+4- When we avoid Hot Spot assigning record to node randomly, What is the disadvantage?
+* Whe you're trying to read a particular item, you have no way of knowning which node it is on. 
+
+5- What is *rebalancing*?
+* The process of moving data around between nodes in the cluster
+
+6- Why you shold never use mod N to assing range in hash partition?
+* Because if you use it, it would return a number between 0 to n, and if you a new node, you would need to reassign it moving it to another node. 
+
+## Chapter 7
 
