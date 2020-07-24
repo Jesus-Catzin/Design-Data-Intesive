@@ -290,3 +290,19 @@ This allow search Similar keys.
 
 ## Chapter 7
 
+1- What is *transactions* and how does it work? 
+* It's a way for an application to group several read and writes together into a logical unit.<br>In this case all the reads and writes in a transaction are executed as one operation: Either the entire transactions succeeds or it fails. 
+
+2- What does mean ACID and BASE*
+* ACID: Atomicity, Consistency, Isolation and Durability
+* Basically Available, Soft state and Eventual consistency.
+
+3-
+
+4-
+
+5-
+
+6-
+
+7-
