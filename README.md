@@ -300,7 +300,8 @@ This allow search Similar keys.
 3- What is Atomicity in the context of ACID?
 * It's describe what happens if a client wants to make several writes, but a fault occurs after some of the writes have been processed.<br> If the writes are grouped together into an atomic transaction, and the transaction cannot be completed (committed) due to a fault, then the transaction is aborted and the database must discard or undo any writes it has made so far in that transaction.
 
-4- 
+4- Which is the philosophy of the ACID databases? 
+* If the database is in danges of any violation its guarantee the ACID, it would rather abandon the transaction entirely than allow it to continue. 
 
 5-
 
