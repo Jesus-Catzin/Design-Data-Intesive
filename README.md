@@ -297,7 +297,7 @@ This allow search Similar keys.
 * ACID: Atomicity, Consistency, Isolation and Durability
 * Basically Available, Soft state and Eventual consistency.
 
-3-
+3- 
 
 4-
 
