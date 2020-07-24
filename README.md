@@ -297,9 +297,10 @@ This allow search Similar keys.
 * ACID: Atomicity, Consistency, Isolation and Durability
 * Basically Available, Soft state and Eventual consistency.
 
-3- 
+3- What is Atomicity in the context of ACID?
+* It's describe what happens if a client wants to make several writes, but a fault occurs after some of the writes have been processed.<br> If the writes are grouped together into an atomic transaction, and the transaction cannot be completed (committed) due to a fault, then the transaction is aborted and the database must discard or undo any writes it has made so far in that transaction.
 
-4-
+4- 
 
 5-
 
