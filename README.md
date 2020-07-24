@@ -303,8 +303,12 @@ This allow search Similar keys.
 4- Which is the philosophy of the ACID databases? 
 * If the database is in danges of any violation its guarantee the ACID, it would rather abandon the transaction entirely than allow it to continue. 
 
-5-
+5- Which is the most basic level of Isolation and what guarrantees?
+* It's *read commited*: 
+ * When  redaing from database, you will only see data that has been committed (No dirty reads)
+ * When writing to thje database, you will ony overwrite data that has benn commited (No dirty writes)
 
-6-
+6- What is non-repeatable read or read skew?
+* It's the fact that one data is late and not update so fast, and when you do a query you would see inconsistencies in that momento, but wainting for a time and requesting again it would show the information correctly. 
 
-7-
+7- 
