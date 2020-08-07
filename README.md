@@ -319,4 +319,15 @@ This allow search Similar keys.
 6- What is non-repeatable read or read skew?
 * It's the fact that one data is late and not update so fast, and when you do a query you would see inconsistencies in that momento, but wainting for a time and requesting again it would show the information correctly. 
 
-7- 
+7- Describe the mechanisms used in Dynamo-style datastores?
+* Read repair: when a client makes a read from several nodes in parallel, it can detect any stale responses.
+* Anti-entropy process: some datastores have a background process that constantly looks for differences in the data between replicas and copies any missing data from one replica to another.
+
+8-  What are skewed workloads?
+* Some partitions that have more data or queries than others. The presence of skew makes partitioning much less effective. In an extreme case, all the load could end up on one partition, so 9 out of 10 nodes are idle and your bottleneck is the single busy node.
+
+9- Why are concurrency bugs hard to find by testing?
+* Because such bugs are only triggered when you get unlucky with the timing. Such timing issues might occur very rarely, and are usually difficult to reproduce.
+
+10- What is the idea of snapshot isolation?
+* The idea is that each transaction reads from a consistent snapshot of the database—that is, the transaction sees all the data that was committed in the database at the start of the transaction. Even if the data is subsequently changed by another transaction, each transaction sees only the old data from that particular point in time.
