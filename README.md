@@ -288,10 +288,7 @@ This allow search Similar keys.
 6- Why you shold never use mod N to assing range in hash partition?
 * Because if you use it, it would return a number between 0 to n, and if you a new node, you would need to reassign it moving it to another node.
 
-7- What is snapshot isolation?
-* The idea is that each transaction reads from a consistent snapshot of the database—that is, the trans‐ action sees all the data that was committed in the database at the start of the transaction. Even if the data is subsequently changed by another transaction, each transaction sees only the old data from that particular point in time.
-
-8- How does the database know if a query result might have changed?
+7- How does the database know if a query result might have changed?
 * Detecting reads of a stale MVCC object version (uncommitted write occurred before the read)
 * Detecting writes that affect prior reads (the write occurs after the read)
 
